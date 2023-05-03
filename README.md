@@ -69,4 +69,3 @@ Once the user selects the peer to peer communication the server will ask the use
 <img height="300" width="300" src="https://github.com/naveen-kurra/Peer_Peeer_Communication_Broadcasting/blob/main/peer2.png">
 </p>
 
-
