@@ -57,4 +57,16 @@ If a user wants to broadcast a message, the client will ask them to enter the me
 Once the user selects the peer to peer communication the server will ask the user to enter the message in the format msg_yourMessage_Address. And once the server receives the message it will split the message by ‘_’ and check the first segments, if first segment is msg then it will send the message to client in the format ‘peer_destinationAddress’ to requested client and once a client receive the message starting with segment ‘peer’ it will creates a remote <b>TCP Socket</b> directly to the destination client address and exchange the messages.</li></ol>
 <li>While the server is in an infinite loop waiting for messages from clients, we'll check the first condition that duration of each client from their connected time, if it is more than or equal to <b>30 mins</b>, then we'll check for second condition that the number of messages sent in the last 30mins by that client. If it is less than 2, then the client will be notified that “Inactive for too long, terminating connection”. And for all the users who entered into the first condition, connected time will be changed to current time and so forth….</li></ol></ol>
 <li> List of Active Clients </li>
-<img height="30" src="https://github.com/naveen-kurra/naveen-kurra/blob/main/icons8-twitter-64.png"></a>&nbsp;&nbsp;
+<img height="300" width="300" src="https://github.com/naveen-kurra/Peer_Peeer_Communication_Broadcasting/blob/main/Active_client.png"></a>&nbsp;&nbsp;
+<li> BroadCasting </li>
+<p float="left">
+  <img height="300" width="300" src="https://github.com/naveen-kurra/Peer_Peeer_Communication_Broadcasting/blob/main/broadcast1.png">&nbsp;&nbsp;
+<img height="300" width="300" src="https://github.com/naveen-kurra/Peer_Peeer_Communication_Broadcasting/blob/main/Broadcast2.png">
+</p>
+<li> Peer_Peer </li>
+<p float="left">
+  <img height="300" width="300" src="https://github.com/naveen-kurra/Peer_Peeer_Communication_Broadcasting/blob/main/Peer1.png">&nbsp;&nbsp;
+<img height="300" width="300" src="https://github.com/naveen-kurra/Peer_Peeer_Communication_Broadcasting/blob/main/peer2.png">
+</p>
+
+
